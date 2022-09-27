@@ -5,9 +5,7 @@
   .list_rooms_marseille{
     width: 100%;
   }
-  .list_rooms .card_room {
-    width: 47%;
-  }
+
   .filtres {
     flex-wrap: wrap;
   }
@@ -21,28 +19,27 @@
     flex-direction: row;
     width: 66%;
   }
-  /* .activite_card img{
-    height: 81%;
-  } */
-  /*.activite_card{*/
-  /*  width: 30%;*/
-  /*}*/
-  /*.h60, .h40 {*/
-  /*  height : 250px;*/
-  /*}*/
-  /*.h50{*/
-  /*  height : 320px;*/
-  /*}*/
 }
-@media (max-width: 991px){
+/*Format tablette*/
+@media (max-width: 992px){
   .hebergement_marseille {
     flex-wrap: wrap-reverse;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .list_popular_Marseille{
+    width: 100%;
+  }
+  .activite_marseille{
+    width: 80%;
+    margin: 60px auto;
   }
   .list_activite_marseille {
     height : auto;
   }
   .activite_card {
     width : 100%;
+
   }
   .h100, .h60, .h50, .h40 {
     height : 300px;
@@ -56,6 +53,7 @@
     max-width: 100%;
   }
 }
+/*Format Mobile*/
 @media (max-width: 768px) {
     .container_body{
         padding: 0;
@@ -64,8 +62,14 @@
   .filtres h2 {
     width: 100%;
   }
+  .hebergement_marseille {
+    width: 100%;
+  }
 
-
+  .activite_marseille{
+    width: 100%;
+    padding: 20px 15px 25px 15px;
+  }
   .input_search button .icon_button_search {
     display: block;
   }
@@ -96,11 +100,6 @@ header{
     border-top: none;
     border-color: var(--bleu);
   }
-  .activite_marseille{
-    margin: 60px 15px;
-  }
-
-
 
 
 main{
