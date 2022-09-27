@@ -1,6 +1,5 @@
 @media (max-width: 1300px) {
   .hebergement_marseille {
-    flex-wrap: wrap;
     justify-content: center;
   }
   .list_rooms_marseille{
@@ -16,7 +15,7 @@
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    height : 680px;
+
   }
   .col_activite_cards{
     flex-direction: row;
@@ -25,31 +24,19 @@
   /* .activite_card img{
     height: 81%;
   } */
-  .activite_card{
-    width: 30%;
-  }
-  .h60, .h40 {
-    height : 250px;
-  }
-  .h50{
-    height : 320px;
-  }
+  /*.activite_card{*/
+  /*  width: 30%;*/
+  /*}*/
+  /*.h60, .h40 {*/
+  /*  height : 250px;*/
+  /*}*/
+  /*.h50{*/
+  /*  height : 320px;*/
+  /*}*/
 }
-
-@media (max-width: 768px) {
-    .container_body{
-        padding: 0;
-    }
-
-  .filtres h2 {
-    width: 100%;
-  }
-
+@media (max-width: 991px){
   .hebergement_marseille {
     flex-wrap: wrap-reverse;
-  }
-  .icon_button_search {
-    display: none;
   }
   .list_activite_marseille {
     height : auto;
@@ -60,13 +47,34 @@
   .h100, .h60, .h50, .h40 {
     height : 300px;
   }
+  .col_activite_cards{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .activite_card{
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+    .container_body{
+        padding: 0;
+    }
+
+  .filtres h2 {
+    width: 100%;
+  }
+
+
+  .input_search button .icon_button_search {
+    display: block;
+  }
+
   .info_title_popular h4 {
     font-weight: 800;
     font-size: medium;
 }
-}
 
-@media (max-width: 430px) {
 header{
   margin-bottom: 60px;
 }
@@ -91,15 +99,9 @@ header{
   .activite_marseille{
     margin: 60px 15px;
   }
-.activite_card{
-  max-width: 100%;
-}
 
-.col_activite_cards{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
+
+
 
 main{
     margin: 0;
@@ -126,8 +128,12 @@ main{
   .text_button_search {
     display: none;
   }
+  .list_rooms img{
+    height: 210px;
+  }
   .list_rooms .card_room {
     width: 100%;
+    height: 300px;
   }
   .icon_button_search {
     display: block;

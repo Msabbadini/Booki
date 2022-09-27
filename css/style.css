@@ -1,7 +1,6 @@
 @font-face {
-  font-family: "Relaway";
-  src: url("../fonts/Relaway.ttf") format("truetype");
-}
+  font-family: "Ralaway";
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap')}
 
 *,
 ::before,
@@ -25,7 +24,7 @@ ul {
   list-style: none;
 }
 body {
-  font-family: "Relaway", sans-serif;
+  font-family: "Ralaway", sans-serif;
 }
 header {
   width : 100%;
@@ -45,11 +44,12 @@ main {
 }
 
 .container_body {
-  padding: 0px 30px 0px 30px;
+  padding: 0 15px 0 15px;
   width : 100%;
   max-width: 1400px;
   margin : 0 auto;
 }
+
 .nav-container {
   display: flex;
   flex-direction: row;
@@ -77,22 +77,21 @@ main {
 
 }
 .nav-list li:hover {
-  border-top: 4px solid transparent;
-  border-color: var(--bleu);
+  border-top: 4px solid var(--bleu);
 }
 .nav-list a{
   display: block;
   width: 100%;
   justify-content: center;
 }
-
-main {
-  max-width: 100%;
-  margin: 15px;
+.nav-list li:hover a{
+  color: var(--bleu);
 }
+
+
 /* bloc information filtre */
 .b_information {
-  margin: 25px 0px;
+  margin: 25px 0;
   display: flex;
   flex-direction: column;
 }
@@ -108,7 +107,6 @@ main {
   outline: none;
   height: 52px;
   margin-left: -5px;
-  border: none;
   padding: 10px;
   border: 1px solid var(--gris);
   min-width: 100px;
@@ -130,7 +128,7 @@ main {
   cursor: pointer;
 }
 
-.input_search button .fa-search {
+.input_search button .icon_button_search {
   display: none;
 }
 /* Bloc cards Marseille */
@@ -274,7 +272,6 @@ main {
   background-color: var(--bleu-clair);
   height: 50px;
   width: 50px;
-  display: inline-block;
   border-radius: 100%;
   color: var(--bleu);
   display: flex;
@@ -312,7 +309,7 @@ main {
 /* Activite */
 
 .activite_marseille {
-  margin: 60px 0px;
+  margin: 60px 0;
   height: 100%;
 }
 .activite_marseille h2 {
@@ -322,7 +319,7 @@ main {
 }
 .list_activite_marseille {
   display: flex;
-  gap: 25px;
+  gap: 20px;
   width: 100%;
   height : 420px;
   flex-direction: column;
@@ -334,7 +331,8 @@ main {
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 0 16px #0000002e;
-  width: calc(25% - 34px);
+  /*width: 25%;*/
+  max-width: 25%;
   height: 100%;
 }
 .activite_card a {
@@ -344,16 +342,20 @@ main {
 }
 
 .h100 {
-  height : 420px;
+  /*height : 420px;*/
+  height: 100%;
 }
 .h60 {
-  height : 227px;
+  /*height : 227px;*/
+  height: 56%;
 }
 .h50{
-  height : 197px;
+  /*height : 197px;*/
+  height: 47%;
 }
 .h40{
-  height : 165px;
+  /*height : 165px;*/
+  height: 39%;
 }
 .col_activite_cards {
   display: flex;
@@ -372,7 +374,9 @@ main {
 .title_activite {
   display: flex;
   justify-content: flex-start;
-  padding: 15px 10px 20px;
+  /*padding: 15px 10px 20px;*/
+  padding: 10px 0 0 15px;
+  font-size: medium;
 }
 .activite_card_two {
   display: flex;
@@ -387,7 +391,7 @@ main {
 
 
 
-  
+
 
 /* Footer */
 
@@ -439,7 +443,7 @@ footer {
   margin-right: 10%;
 }
 
-.assistance h6 {
+.assistance h5 {
   font-size: larger;
   margin-bottom: 10px;
 }
